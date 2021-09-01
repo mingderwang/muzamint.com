@@ -4,7 +4,7 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "start": "micro -l tcp://0.0.0.0:${PORT-3000}"
+    "start": "micro -l tcp://0.0.0.0:${PORT-6000}"
   },
   "dependencies": {
     "micro-route": "^2.5.0"
