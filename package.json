@@ -4,12 +4,15 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "start": "micro -l tcp://0.0.0.0:${PORT-6000}"
+    "start": "micro",
+    "dev": "micro-dev",
+    "inspect": "node --inspect node_modules/.bin/micro-dev"
   },
   "dependencies": {
     "micro-route": "^2.5.0"
   },
   "devDependencies": {
-    "micro": "^9.3.4"
+    "micro": "^9.3.4",
+    "micro-dev": "^3.0.0"
   }
 }
