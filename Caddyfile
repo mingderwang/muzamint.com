@@ -2,6 +2,26 @@ ipfs-proxy-server.muzamint.com {
   reverse_proxy 127.0.0.1:5001
 }
 
+api.muzamint.com {
+  reverse_proxy 127.0.0.1:7357
+}
+
+localhost {
+  reverse_proxy 127.0.0.1:6000
+}
+
+www.muzamint.com {
+  reverse_proxy 127.0.0.1:6000
+}
+
 muzamint.com {
   reverse_proxy 127.0.0.1:6000
+}
+
+video.muzamint.com {
+  reverse_proxy 127.0.0.1:8080
+}
+
+mars.muzamint.com {
+  reverse_proxy 127.0.0.1:3000
 }
