@@ -22,7 +22,10 @@ export function middleware(req: NextRequest) {
   const url = req.nextUrl.clone()
 
   // Redirect paths that go directly to the variant
-  if (url.pathname === '/terms') {
+  if (url.pathname === '/404') {
+    url.pathname = '/api/404'
+    return NextResponse.redirect(url)
+  } else if (url.pathname === '/terms') {
     url.pathname = '/api/terms'
     return NextResponse.redirect(url)
   } else if (url.pathname === '/contact') {
